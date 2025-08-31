@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Takvim Uygulamsı</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+     <div class="kapsayici">
+    <header class="ust">
+      <button id="oncekiAyBtn" aria-label="Önceki Ay">‹</button>
+      <h1 id="ayYil"></h1>
+      <button id="sonrakiAyBtn" aria-label="Sonraki Ay">›</button>
+    </header>
+
+    <div class="hafta-basliklari">
+      <div>Pzt</div>
+      <div>Sal</div>
+      <div>Çar</div>
+      <div>Per</div>
+      <div>Cum</div>
+      <div>Cmt</div>
+      <div>Paz</div>
+    </div>
+
+    <div id="takvim" class="takvim"></div>
+
+    <div class="alt">
+      <p>Bir güne tıklayarak not ekleyebilirsin. (Tarayıcıda saklanır)</p>
+      <button id="buguneGitBtn">Bugüne Git</button>
+      <button id="tumNotlariSilBtn">Tüm Notları Sil</button>
+    </div>
+  </div>
+
+  
+  <dialog id="notPenceresi">
+    <form method="dialog" class="not-form">
+      <h3 id="notBaslik">Not</h3>
+      <textarea id="notMetni" rows="5" placeholder="Bu güne not ekle..."></textarea>
+      <div class="not-butonlar">
+        <button id="notiKaydetBtn" value="kaydet">Kaydet</button>
+        <button id="notiSilBtn" value="sil">Notu Sil</button>
+        <button value="iptal">Kapat</button>
+      </div>
+    </form>
+  </dialog>
+
+  <script src="script.js"></script>
+    
+</body>
+</html>
